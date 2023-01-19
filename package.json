@@ -1,8 +1,8 @@
 {
-  "name": "smartcontract-ts",
+  "name": "typescript-template",
   "version": "1.0.0",
-  "description": "Smartcontract.ts allows you to code smart contracts for Ethereum using pure TypeScript",
-  "main": "index.js",
+  "description": "Typescript Template",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest --verbose",
     "pretest": "npm run lint",
