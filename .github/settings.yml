@@ -95,6 +95,10 @@ labels:
     color: ffffff
     description: This will not be worked on
 
+  - name: stale
+    color: a0a0a0
+    description: This issue or pull request has been marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions.
+
 # Milestones: define milestones for Issues and Pull Requests
 milestones:
 
@@ -130,7 +134,7 @@ branches:
         # Required. The list of status checks to require in order to merge into this branch
         contexts:
       # Required. Enforce all configured restrictions for administrators. Set to true to enforce required status checks for repository administrators. Set to null to disable.
-      enforce_admins: true
+      enforce_admins: false
       # Prevent merge commits from being pushed to matching branches
       required_linear_history: true
       # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
