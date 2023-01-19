@@ -95,6 +95,10 @@ labels:
     color: ffffff
     description: This will not be worked on
 
+  - name: stale
+    color: a0a0a0
+    description: This issue or pull request has been marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions.
+
 # Milestones: define milestones for Issues and Pull Requests
 milestones:
 
