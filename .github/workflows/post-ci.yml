@@ -23,7 +23,7 @@ jobs:
       - name: Save PR Data
         id: save-pr-data
         run: |
-          echo "pr_number-$(cat pr_number)" >> $GITHUB_OUTPUT
+          echo "pr_number=$(cat pr_number)" >> $GITHUB_OUTPUT
           echo "pr_sha=$(cat pr_sha)" >> $GITHUB_OUTPUT
           echo "merge_sha=$(cat merge_sha)" >> $GITHUB_OUTPUT
 
