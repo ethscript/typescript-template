@@ -7,6 +7,27 @@ on:
       - main
 
 jobs:
+  save-pr:
+    name: Save PR Number
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Save PR number
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          MERGE_SHA: ${{ github.sha }}
+        run: |
+          mkdir -p ./pr
+          echo $PR_NUMBER > ./pr/pr_number
+          echo $PR_SHA > ./pr/pr_sha
+          echo $MERGE_SHA > ./pr/merge_sha
+      - name: Upload PR Number
+        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+        with:
+          name: pr_number
+          path: pr/
+  
   link-check:
     name: Link Check
     runs-on: ubuntu-latest

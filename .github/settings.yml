@@ -57,5 +57,6 @@ branches:
           - Link Check
           - CodeSpell
           - Markdown Linter
+          - build (18.x)
       enforce_admins: false
       required_linear_history: true
