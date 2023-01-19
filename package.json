@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pandapip1/smartcontract-ts.git"
+    "url": "git+https://github.com/ethscript/typescript-template.git"
   },
-  "author": "smartcontract-ts",
+  "author": "ethscript",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/Pandapip1/smartcontract-ts/issues"
+    "url": "https://github.com/ethscript/typescript-template/issues"
   },
-  "homepage": "https://github.com/Pandapip1/smartcontract-ts#readme",
+  "homepage": "https://ethscript.github.io/typescript-template",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
