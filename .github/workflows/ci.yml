@@ -22,6 +22,7 @@ jobs:
       - name: Link Checker
         uses: gaurav-nelson/github-action-markdown-link-check@0a51127e9955b855a9bbfa1ff5577f1d1338c9a5
         with:
+          base-branch: main
           config-file: config/mlc_config.json
           use-quiet-mode: no
           use-verbose-mode: yes
