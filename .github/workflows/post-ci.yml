@@ -28,7 +28,7 @@ jobs:
           echo "merge_sha=$(cat merge_sha)" >> $GITHUB_OUTPUT
 
       - name: Add Comment
-        uses: marocchino/sticky-pull-request-comment@3d60a5b2dae89d44e0c6ddc69dd7536aec2071cd
+        uses: marocchino/sticky-pull-request-comment@a3fae98d20231da82077e18f40edee253cb0afbb
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         with:
           number: ${{ steps.save-pr-data.outputs.pr_number }}
